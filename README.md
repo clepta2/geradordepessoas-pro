@@ -3,9 +3,10 @@
 > **API REST e SDK de alta performance em Cloudflare Edge para geração instantânea de pessoas fictícias, documentos matematicamente válidos (CPF Módulo 11 por UF, RG), endereços reais com CEP/DDD, dados bancários e profissões para testes e mockups (Estilo 4Devs) em <5ms.**
 
 [![Status](https://img.shields.io/badge/Status-Cloudflare%20Edge%20API-success.svg)](#)
+[![CI/CD Tests](https://github.com/clepta2/geradordepessoas-pro/actions/workflows/test.yml/badge.svg)](https://github.com/clepta2/geradordepessoas-pro/actions)
 [![Padrão](https://img.shields.io/badge/Padrão-Receita%20Federal%20Módulo%2011-blue.svg)](#)
 [![Latency](https://img.shields.io/badge/Latência-<5ms-cyan.svg)](#)
-[![License](https://img.shields.io/badge/License-MIT%20SDK-purple.svg)](LICENSE)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietária%20%2F%20Portal%20de%20APIs-red.svg)](LICENSE)
 
 ---
 
