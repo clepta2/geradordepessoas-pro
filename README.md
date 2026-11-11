@@ -61,13 +61,13 @@ console.log(res.pessoa);
 
 ```bash
 # Gerar 1 pessoa aleatória
-curl -X GET "https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa"
+curl -X GET "https://ponte.ozpro.com.br/api/gerar-pessoa"
 
 # Filtrar por Estado (UF) e Gênero
-curl -X GET "https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa?uf=SP&sexo=M"
+curl -X GET "https://ponte.ozpro.com.br/api/gerar-pessoa?uf=SP&sexo=M"
 
 # Gerar lote de 5 pessoas
-curl -X GET "https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa?qtd=5&uf=RJ"
+curl -X GET "https://ponte.ozpro.com.br/api/gerar-pessoa?qtd=5&uf=RJ"
 ```
 
 ---
@@ -78,7 +78,7 @@ curl -X GET "https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pess
 ```python
 import requests
 
-url = "https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa"
+url = "https://ponte.ozpro.com.br/api/gerar-pessoa"
 res = requests.get(url, params={"uf": "SP", "sexo": "M"}).json()
 
 p = res["pessoa"]
@@ -91,7 +91,7 @@ print("Profissão:", p["perfil"]["profissao"])
 ### 🐘 PHP (Laravel, WordPress, Scripts de Seed)
 ```php
 <?php
-$url = "https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa?uf=SP";
+$url = "https://ponte.ozpro.com.br/api/gerar-pessoa?uf=SP";
 $dados = json_decode(file_get_contents($url), true);
 $p = $dados['pessoa'];
 
@@ -103,13 +103,13 @@ echo "CPF: " . $p['cpf'] . PHP_EOL;
 ### 🔷 C# / .NET
 ```csharp
 using var client = new HttpClient();
-string json = await client.GetStringAsync("https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa?uf=MG");
+string json = await client.GetStringAsync("https://ponte.ozpro.com.br/api/gerar-pessoa?uf=MG");
 Console.WriteLine(json);
 ```
 
 ### 🌐 JavaScript / TypeScript (Node.js, React, Next.js)
 ```javascript
-const res = await fetch("https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa?uf=SP&qtd=3");
+const res = await fetch("https://ponte.ozpro.com.br/api/gerar-pessoa?uf=SP&qtd=3");
 const { pessoas } = await res.json();
 pessoas.forEach(p => console.log(p.nome, p.cpf, p.endereco.cidade));
 ```
@@ -122,13 +122,6 @@ Ao criar aplicações com inteligência artificial, você pode economizar **90% 
 
 ```text
 Ao criar telas de mock, testes de cadastro ou seeds de banco de dados, utilize a API Anycast do GeradorDePessoas Pro para obter dados brasileiros reais:
-- Endpoint: GET https://geradordepessoas-pro-api.maputo2.workers.dev/api/gerar-pessoa?qtd=5&uf=SP
+- Endpoint: GET https://ponte.ozpro.com.br/api/gerar-pessoa?qtd=5&uf=SP
 Retorne os dados mockados diretamente da resposta JSON.
 ```
-
----
-
-## 🔒 Marketplace de APIs & Ecossistema
-
-Este projeto faz parte do ecossistema de APIs de alta performance OZPro Enterprise:
-👉 **[Acessar Ponte API Marketplace](https://ponte.ozpro.com.br)**

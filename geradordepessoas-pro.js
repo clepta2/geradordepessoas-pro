@@ -140,7 +140,7 @@ const PROVEDORES_EMAIL = ['gmail.com', 'outlook.com', 'hotmail.com', 'yahoo.com.
 
 export class GeradorDePessoasPro {
   constructor(options = {}) {
-    this.endpoint = options.endpoint || 'https://geradordepessoas-pro-api.maputo2.workers.dev';
+    this.endpoint = options.endpoint || 'https://ponte.ozpro.com.br';
     this.apiKey = options.apiKey || '';
   }
 
